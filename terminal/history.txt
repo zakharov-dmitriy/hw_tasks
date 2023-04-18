@@ -1,0 +1,20 @@
+ 1  open .
+ 2  pwd
+ 3  mkdir hw_tasks
+ 4  cd hw_tasks
+ 5  mkdir dir1 dir2 dir3
+ 6  cd dir1
+ 7  touch text1.txt text2.txt text3.txt json1.json json2.json
+ 8  mkdir folder-01 folder-02 folder-03
+ 9  ls -la
+ 10  cat >> text1.txt
+ 11  cat text1.txt
+ 12  cd ..
+ 13  mv dir1/text2.txt dir1/json2.json dir2
+ 14  cp dir1/text1.txt dir1/json1.json dir3
+ 15  find . -name "json1.json"
+ 16  tail -f text1.txt | grep "hello"
+ 17  head -n 3 text1.txt
+ 18  tail -n 3 text1.txt
+ 19  less text1.txt
+ 20  date; date +%D
