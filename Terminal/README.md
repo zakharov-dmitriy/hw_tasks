@@ -24,10 +24,19 @@
 |18|Вывести последние несколько строк из тектового файла|`tail -n 3 text1.txt`|
 |19|Просмотреть содержимое длинного файла|`less text1.txt`|
 |20|Вывести дату и время|`date; date +%D`|
-|21|Отправить http запрос на сервер <http://162.55.220.72:5005/terminal-hw-request>|`curl http://162.55.220.72:5005/terminal-hw-request`|
-|22|Написать скрипт, который выполнит автоматически пункты 3, 4, 5, 6, 7, 8, 13|[Ссылка на файл](https://github.com/zakharov-dmitriy/terminal/blob/main/script.sh)|
+|21|Отправить http запрос на сервер <http://162.55.220.72:5005/terminal-hw-request>|`curl http://162.55.220.72:5005/terminal-hw-request` *|
+|22|Написать скрипт, который выполнит автоматически пункты 3, 4, 5, 6, 7, 8, 13|[Ссылка на файл](https://github.com/zakharov-dmitriy/terminal/blob/main/script.sh) **|
 
- #### как запустить скрипт: 
+#### * полученный ответ от сервера: 
+```
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<title>404 Not Found</title>
+<h1>Not Found</h1>
+<p>The requested URL was not found on the server. 
+If you entered the URL manually please check your spelling and try again.</p>
+```
+
+ #### ** как запустить скрипт: 
  1. Для удобства необходимо находиться в той же директории с файлом скрипта script.sh
  2. В терминале написать команду `./script.sh`
  3. Если далее последует сообщение об отказе в доступе, выполнить команду `chmod +x script.sh` и снова запустить команду из пункта 2
