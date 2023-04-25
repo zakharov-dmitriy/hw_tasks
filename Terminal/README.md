@@ -63,7 +63,7 @@ If you entered the URL manually please check your spelling and try again.</p>
 |12|Через `cat` добавить в текстовый файл **tf_3.txt** строку *“the SeCoNd 2”*|`cat >> tf_3.txt`<br>`the SeCoNd 2`|
 |13|Через `cat` добавить в текстовый файл **tf_2.txt** строку *“the seConD 2”*|`cat >> ../tf_2.txt`<br>`the seConD 2`|
 |14|Сделать текстовый файл **tf_4.txt** в котором будет 15 строк|`for i in {1..15}; do echo "This is string $i" >> tf_4.txt; done`|
-|15|Сделать текстовый файл **tF_5.txt** в котором будет 13 строк|`for i in {1..13}; do echo "Lorem ipsum $i" >> tf_5.txt; done`|
+|15|Сделать текстовый файл **tF_5.txt** в котором будет 13 строк|`for i in {1..13}; do echo "Lorem ipsum $i" >> tF_5.txt; done`|
 |16|Вывести список всех файлов в папке|`ls -la`|
 |17|Выйти из папки **inner_dir_1**|`cd ..`|
 |18|Вывести содержимое файла tf_3.txt в терминал|`cat inner_dir_1/tf_3.txt`|
@@ -84,21 +84,21 @@ If you entered the URL manually please check your spelling and try again.</p>
 |33|Вывести в терминал 4 последние строки любого текстового файла|`tail -n 4 inner_dir_1/tF_5.txt`|
 |34|Вывести в терминал 4 первые строки любого текстового файла|`head -n 4 inner_dir_1/tF_5.txt`|
 |35|Команда в одну строку. Создать папку и создать текстовый файл с содержимым|`mkdir dir_2; cat > dir_2/file.txt`|
-|36|Команда в одну строку. Переместить в любую одну папку текстовые файлы, у которых в содержимом есть слово *“sec”*|`find . -type f -name '*' -exec grep -rwl 'sec' {} + \| xargs -I{} mv {} dir_2`|
-|37|Команда в одну строку. Скопировать в любую одну папку текстовые файлы, у которых в содержимом есть слово *“sec”*|`find . -type f -name '*' -exec grep -rwl 'sec' \| xargs -I{} cp -f {} dir2`|
+|36|Команда в одну строку. Переместить в любую одну папку текстовые файлы, у которых в содержимом есть слово *“sec”*|`find . -type f -name '*' -exec grep -rwl 'sec' {} + \| xargs -I{} mv {} dir_2`<br>на линукс<br>`grep -rl 'sec' | xargs mv -t dir3`|
+|37|Команда в одну строку. Скопировать в любую одну папку текстовые файлы, у которых в содержимом есть слово *“sec”*|`find . -type f -name '*' -exec grep -rwl 'sec' \| xargs -I{} cp -f {} dir2` <br>на линукс<br>`grep -rl 'sec' | xargs cp -t dir3`|
 |38|Команда в одну строку. Найти все строки c *“sec”* во всех текстовых файлах, скопировать и вставить эти строки в один новый созданный текстовый файл|`grep -rh 'sec' . > sec.txt`|
-|39|Команда в одну строку. Удалить текстовые файлы, у которых в содержимом есть слово *“sec”*|`find -type f -name '*' -exec grep -rl 'sec' {} + \| xargs -I{} rm {}`|
+|39|Команда в одну строку. Удалить текстовые файлы, у которых в содержимом есть слово *“sec”*|`find -type f -name '*' -exec grep -rl 'sec' {} + \| xargs -I{} rm {}`<br>на линукс<br>`grep -rl 'sec' | xargs cp rm`|
 |40|Просто вывести в терминал строку `“Good job!!”`|`echo 'Good job!!'`|
 
 ###### Пояснения к командам
 
 <h6 style="text-align: center">#23</h6>
 
-Флаг `-h` команде `grep` означанет, что выводиться будут только совпадения по строке.
+Флаг `-h` команды `grep` означанет, что выводиться будут только совпадения по строке.
 
 <h6 style="text-align: center">#25-28</h6>
 
-Флаг `-w` команде `grep` означанет, что поиск будет проходить по точному совподению символов.
+Флаг `-w` команды `grep` означанет, что поиск будет проходить по точному совподению символов.
 
 <h6 style="text-align: center">#29</h6>
 
@@ -106,7 +106,7 @@ If you entered the URL manually please check your spelling and try again.</p>
 
 <h6 style="text-align: center">#30</h6>
 
-Флаг `-l` команде `grep`используется только для вывода имени файлов, а не строки с совпадениями.
+Флаг `-l` команды `grep`используется только для вывода имени файлов, а не строки с совпадениями.
 
 <h6 style="text-align: center">#31</h6>
 
@@ -126,6 +126,8 @@ If you entered the URL manually please check your spelling and try again.</p>
 <h6 style="text-align: center">#37</h6>
 
 Флаг `-f` в команде `cp` используется для перезаписи целевого файла,если он уже существует.
+
+Флаг `-t` позволяет переместить несколько файлов в одну директорию одной командой.
 
 <h6 style="text-align: center">#38</h6>
 
