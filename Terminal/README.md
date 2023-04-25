@@ -62,8 +62,8 @@ If you entered the URL manually please check your spelling and try again.</p>
 |11|Через `cat` добавить в текстовый файл **tf_2.txt** строку *“the sec 3”*|`cat >> ../tf_2.txt`<br>`the sec 2`|
 |12|Через `cat` добавить в текстовый файл **tf_3.txt** строку *“the SeCoNd 2”*|`cat >> tf_3.txt`<br>`the SeCoNd 2`|
 |13|Через `cat` добавить в текстовый файл **tf_2.txt** строку *“the seConD 2”*|`cat >> ../tf_2.txt`<br>`the seConD 2`|
-|14|Сделать текстовый файл **tf_4.txt** в котором будет 15 строк|`for i in {1..15}; do echo "This is string $i" >> tf_4.txt; done`|
-|15|Сделать текстовый файл **tF_5.txt** в котором будет 13 строк|`for i in {1..13}; do echo "Lorem ipsum $i" >> tF_5.txt; done`|
+|14|Сделать текстовый файл **tf_4.txt** в котором будет 15 строк|`for i in {1..15}; do echo "This is string $i"; done > tf_4.txt`|
+|15|Сделать текстовый файл **tF_5.txt** в котором будет 13 строк|`for i in {1..13}; do echo "Lorem ipsum $i"; done > tF_5.txt`|
 |16|Вывести список всех файлов в папке|`ls -la`|
 |17|Выйти из папки **inner_dir_1**|`cd ..`|
 |18|Вывести содержимое файла tf_3.txt в терминал|`cat inner_dir_1/tf_3.txt`|
