@@ -22,8 +22,8 @@
 	the SeCoNd 2
 13. cat >> ../tf_2.txt
 	the seConD 2
-14. for i in {1..15}; do echo "This is string $i" >> tf_4.txt; done
-15. for i in {1..13}; do echo "Lorem ipsum $i" >> tf_5.txt; done
+14. for i in {1..15}; do echo "This is string $i"; done > tf_4.txt
+15. for i in {1..13}; do echo "Lorem ipsum $i"; done > tF_5.txt
 16. ls -la
 17. cd ..
 18. cat inner_dir_1/tf_3.txt
@@ -44,8 +44,8 @@
 33. tail -n 4 inner_dir_1/tF_5.txt
 34. head -n 4 inner_dir_1/tF_5.txt
 35. mkdir dir_2; cat > dir_2/file.txt
-36. find . -type f -name '*' -exec grep -rwl 'sec' {} + | xargs -I{} mv {} dir_2
-37. find . -type f -name '*' -exec grep -rwl 'sec' | xargs -I{} cp -f {} dir2
+36. grep -rwl 'sec' | xargs -I{} mv {} dir_2
+37. grep -rwl 'sec' | xargs -I{} cp -f {} dir2
 38. grep -rh 'sec' . > sec.txt
-39. find -type f -name '*' -exec grep -rl 'sec' {} + | xargs -I{} rm {}
+39. grep -rwl 'sec' | xargs rm
 40. echo 'Good job!!'
