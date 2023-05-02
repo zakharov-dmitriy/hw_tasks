@@ -31,12 +31,19 @@
 
 ##### * полученный ответ от сервера
 
+отработает если поменять порт на 5006
+
 ```
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
-<title>404 Not Found</title>
-<h1>Not Found</h1>
-<p>The requested URL was not found on the server. 
-If you entered the URL manually please check your spelling and try again.</p>
+{
+  "Intro": "Hello!! This is your the first response from server", 
+  "Tasks": {
+    "Task_1": "Send the next URL in terminal: http://162.55.220.72:5005/get_method?name=(set_your_String)&age=(set_your_number)", 
+    "result": [
+      "Your_String", 
+      "Your_number"
+    ]
+  }
+}
 ```
 
 ##### ** как запустить скрипт
