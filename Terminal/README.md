@@ -40,7 +40,7 @@
 <h6 style="text-align: center">#19</h6>
 
 Создать длинный файл:
-`yes 'Hello World!' | head -n 100 long-file.txt`
+`yes 'Hello World!' | head -n 100 > long-file.txt`
 
 <h6 style="text-align: center">#21</h6>
 
