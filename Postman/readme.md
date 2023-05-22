@@ -16,6 +16,6 @@
 
 # Postman
 
-- [HW_1](link)
-- [HW_2](link)
-- [HW_3](link)
+- [HW_1](https://github.com/zakharov-dmitriy/hw_tasks/tree/main/Postman/HW_1)
+- [HW_2](https://github.com/zakharov-dmitriy/hw_tasks/tree/main/Postman/HW_2)
+- [HW_3](https://github.com/zakharov-dmitriy/hw_tasks/tree/main/Postman/HW_3)
