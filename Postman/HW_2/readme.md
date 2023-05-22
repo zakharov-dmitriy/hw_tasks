@@ -5,11 +5,15 @@
 
 ### Description
 
+#### end point /first
+
 <http://162.55.220.72:5005/first>
 
 1. Отправить запрос.
 2. Статус код **200**.
 3. Проверить, что в `body` приходит правильный string.
+
+#### end point /user_info_3
 
 <http://162.55.220.72:5005/user_info_3>
 
@@ -96,6 +100,8 @@ pm.test("Checking U_SALARY", function (){
     pm.expect(u_salary).to.eql(req_salary*4)
 });
 ```
+
+#### end point /object_info_3
 
 <http://162.55.220.72:5005/object_info_3>
 
