@@ -13,3 +13,9 @@
 
 - [Collections](https://github.com/zakharov-dmitriy/hw_tasks/blob/main/Postman/HW3_34group.postman_collection.json)
 - [Enviroments](https://github.com/zakharov-dmitriy/hw_tasks/blob/main/Postman/hw34.postman_environment-2.json)
+
+# Postman
+
+- [HW_1](link)
+- [HW_2](link)
+- [HW_3](link)
