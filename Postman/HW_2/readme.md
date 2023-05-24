@@ -5,7 +5,7 @@
 
 ### Description
 
-#### end point /first
+#### Endpoint ***/first***
 
 <http://162.55.220.72:5005/first>
 
@@ -13,7 +13,7 @@
 2. Статус код **200**.
 3. Проверить, что в `body` приходит правильный string.
 
-#### end point /user_info_3
+#### Endpoint ***/user_info_3***
 
 <http://162.55.220.72:5005/user_info_3>
 
@@ -101,7 +101,7 @@ pm.test("Checking U_SALARY", function (){
 });
 ```
 
-#### end point /object_info_3
+#### Endpoint ***/object_info_3***
 
 <http://162.55.220.72:5005/object_info_3>
 
