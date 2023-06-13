@@ -121,8 +121,8 @@ create table roles(
 );
 
 --8. Поменять тип поля role_title с int на varchar(30)
-alter table city 
-alter column title 
+alter table roles 
+alter column role_title 
 type varchar(50);
 
 --9. Наполнить таблицу roles 20 строками
