@@ -6,3 +6,4 @@
 - [Postman](https://github.com/zakharov-dmitriy/hw_tasks/tree/main/Postman)
 - [SQL](https://github.com/zakharov-dmitriy/hw_tasks/tree/main/SQL)
 - [Mobile testing](https://github.com/zakharov-dmitriy/hw_tasks/tree/main/Mobile)
+- [JMeter](https://github.com/zakharov-dmitriy/hw_tasks/tree/main/JMeter)
