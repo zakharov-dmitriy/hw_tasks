@@ -7,3 +7,4 @@
 - [SQL](https://github.com/zakharov-dmitriy/hw_tasks/tree/main/SQL)
 - [Mobile testing](https://github.com/zakharov-dmitriy/hw_tasks/tree/main/Mobile)
 - [JMeter](https://github.com/zakharov-dmitriy/hw_tasks/tree/main/JMeter)
+- [Fiddler](https://github.com/zakharov-dmitriy/hw_tasks/tree/main/Fiddler)
